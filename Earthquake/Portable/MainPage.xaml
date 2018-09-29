@@ -11,7 +11,42 @@
              xmlns:telerikBarcode="clr-namespace:Telerik.XamarinForms.Barcode;assembly=Telerik.XamarinForms.Barcode"
              xmlns:telerikConversationalUI="clr-namespace:Telerik.XamarinForms.ConversationalUI;assembly=Telerik.XamarinForms.ConversationalUI"
              x:Class="Earthquake.Portable.MainPage">
-    <Label Text="You are ready to use all controls from UI for XamarinForms suite." HorizontalOptions="Center" VerticalOptions="Center"/>
-    <telerikInput:RadButton x:Name="button" Text="Button" />
+    <ScrollView>
+        <StackLayout Orientation="Vertical" Spacing="20" VerticalOptions="Center" Margin="10" Padding="10">
+            <telerikInput:RadEntry x:Name="txtUserName" WatermarkText="نام کاربری" HorizontalTextAlignment="Center"/>
+            <telerikInput:RadEntry x:Name="txtPassword" WatermarkText="رمز عبور" IsPassword="True" HorizontalTextAlignment="Center"/>
+            <telerikInput:RadButton x:Name="btnLoginTest"
+                        Text="Click me!"  
+                        BackgroundColor="#bfbfbf"
+                        Clicked="btnLoginClicked"/>
+            <Image Source="Header.PNG" Aspect="AspectFill"/>
+            <StackLayout Orientation="Horizontal" Spacing="5">
+                <StackLayout Orientation="Vertical" Spacing="5" HorizontalOptions="CenterAndExpand">
+                    <Label TextColor="#221ced" FontSize = "20" Text="مدیریت بحران آبفا استان تهران" HorizontalTextAlignment="Center" />
+                    <Label TextColor="#ed1c31" FontSize = "12" Text="سامانه تخمین خسارت زلزله WARED" HorizontalTextAlignment="Center" />
+                </StackLayout>
+                <Image Source="Portrate.PNG" />
+
+            </StackLayout>
+            <StackLayout BackgroundColor="#999999" Orientation="Vertical" Spacing="20" Padding="5">
+                <telerikInput:RadButton x:Name="btnMap" Text="مشخصات آخرین زمین لرزه ها (نقشه آنلاین)" Image="Map.PNG" BackgroundColor="#FFFFFF" Padding="5"/>
+                <telerikInput:RadButton x:Name="btnAlarm" Text="مانیتورینگ تاسیسات در شرایط هشدار" Image="Alarm.PNG" BackgroundColor="#FFFFFF" Padding="5"/>
+                <telerikInput:RadButton x:Name="btnReport" Text="خلاصه گزارش خسارت زلزله" Image="Report.PNG" BackgroundColor="#FFFFFF" Padding="5"/>
+                <telerikInput:RadButton x:Name="btnManagement" Text="مدیریت عرضه و تقاضا در شرایط بحران" Image="Management.PNG" BackgroundColor="#FFFFFF" Padding="5"/>
+                <telerikInput:RadButton x:Name="btnReportFull" Text="گزارشگر بحران" TextColor="Red" 
+                                        Image="ReportFull.PNG" BackgroundColor="#FFFFFF" Padding="5"
+                                        Clicked="btnReportFullClicked"/>
+            </StackLayout>
+            <ScrollView Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal" Spacing="2" Padding="1" HorizontalOptions="Center">
+                    <telerikInput:RadButton x:Name="btnRegister" Image="Register.PNG" BackgroundColor="#FFFFFF" Padding="2"/>
+                    <telerikInput:RadButton x:Name="btnConfig" Image="Config.PNG" BackgroundColor="#FFFFFF" Padding="2"/>
+                    <telerikInput:RadButton x:Name="btnLogin" Image="Login.PNG" BackgroundColor="#FFFFFF" Padding="2"/>
+                    <telerikInput:RadButton x:Name="btnHelp" Image="Help.PNG" BackgroundColor="#FFFFFF" Padding="2"/>
+                    <telerikInput:RadButton x:Name="btnAbout" Image="About.PNG" BackgroundColor="#FFFFFF" Padding="2"/>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
 

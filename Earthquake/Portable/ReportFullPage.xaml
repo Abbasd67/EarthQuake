@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Earthquake.Portable"
+             xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+             xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
+             xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             xmlns:telerikGauges="clr-namespace:Telerik.XamarinForms.DataVisualization.Gauges;assembly=Telerik.XamarinForms.DataVisualization"
+             xmlns:telerikGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
+             xmlns:telerikBarcode="clr-namespace:Telerik.XamarinForms.Barcode;assembly=Telerik.XamarinForms.Barcode"
+             xmlns:telerikConversationalUI="clr-namespace:Telerik.XamarinForms.ConversationalUI;assembly=Telerik.XamarinForms.ConversationalUI"
+             x:Class="Earthquake.Portable.ReportFull">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="گزارش بحران" FontSize="20" HorizontalOptions="CenterAndExpand" />
+            <Label Text="(Disaster Report)" TextColor="Blue" FontSize="20" HorizontalOptions="CenterAndExpand" />
+            <telerikInput:RadEntry x:Name="txtLat" WatermarkText="طول جغرافیایی" HorizontalTextAlignment="Center"/>
+            <telerikInput:RadEntry x:Name="txtLng" WatermarkText="عرض جغرافیایی" HorizontalTextAlignment="Center"/>
+            <Label Text="شرح خسارت" FontSize="14" HorizontalOptions="CenterAndExpand" />
+            <Editor x:Name="txtReport" HeightRequest="200"/>
+            <Label Text="زمان انجام بازسازی"/>
+            <!--<telerikInput:RadCalendar x:Name="calendar"/>-->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <telerikInput:RadTimePicker x:Name="time"/>
+                <Label Text="طول زمان بازسازی"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

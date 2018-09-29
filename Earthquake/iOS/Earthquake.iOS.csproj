@@ -158,5 +158,41 @@
       <Name>Earthquake.Portable</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\About.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Alarm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Header.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Help.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Login.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Management.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Map.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Portrate.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Register.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Report.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ReportFull.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

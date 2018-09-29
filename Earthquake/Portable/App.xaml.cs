@@ -13,7 +13,7 @@ namespace Earthquake.Portable
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new LoginPage.LoginPage();
 		}
 
 		protected override void OnStart ()
